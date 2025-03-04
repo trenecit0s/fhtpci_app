@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">fhtpciAPP</string>
+    <string name="txt_nombre_empresa">Farenheit System</string>
+    <string name="content_desc_logo1">Logo 1</string>
+    <string name="content_desc_logo2">Logo 2</string>
+    <string name="edit_text_ph_cve">Clave</string>
+    <string name="edit_text_cve">Cve: </string>
+    <string name="edit_text_pwd">Pwd: </string>
+    <string name="edit_text_ph_pwd">Contraseña</string>
+    <string name="txt_view_firma_acceso">Firma de Acceso:</string>
+    <string name="btn_text_inicio_sesion">Iniciar Sesión</string>
+</resources>

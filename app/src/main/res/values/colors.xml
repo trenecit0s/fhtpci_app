@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fhtpciGris">#999999</color>
+    <color name="fhtpciAzul">#0059D9</color>
+    <color name="fhtpciLlama4">#86372B</color>
+    <color name="fhtpciLlama3">#FF7F40</color>
+    <color name="fhtpciLlama2">#815A2D</color>
+    <color name="fhtpciLlama1">#FFCC3F</color>
+</resources>
