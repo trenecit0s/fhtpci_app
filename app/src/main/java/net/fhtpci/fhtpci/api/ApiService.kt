@@ -1,8 +1,10 @@
 package net.fhtpci.fhtpci.api
 
+import net.fhtpci.fhtpci.model.AccesoUsuarioResponse
 import net.fhtpci.fhtpci.model.VersionResponse
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 /*
  * NOMBRE: mod_api_regresa_version_app.php
@@ -18,9 +20,18 @@ import retrofit2.http.GET
 interface ApiService {
     @GET("mod_api_regresa_version_app.php")
     suspend fun getVersion(): Response<List<VersionResponse>>
+
+    @GET("mod_api_revisa_acceso_usuario.php")
+    suspend fun obtenerAccesoUsuario(
+        @Query("kcve_usuario") userKey: String,
+        @Query("kpwd_usuario") userPassword: String
+    ): Response<AccesoUsuarioResponse>
 }
 
 /*
+//https://fhtpci.net/api/mod_api_regresa_version_app.php?datoaenviar
+
+/* https://fhtpci.net/api/mod_api_revisa_acceso_usuario.php
  * NOMBRE: mod_api_revisa_acceso_usuario.php
  * DESCRIPCION: REGRESA PERMISO DE ACCESO
  * PARAMETROS:
@@ -561,3 +572,5 @@ interface ApiService {
     @GET("mod_api_cata_extintores_tipo_capacidad.php")
     suspend fun getVersion(): Response<List<ExtTipoCapacidadResponse>>
 }
+
+*/

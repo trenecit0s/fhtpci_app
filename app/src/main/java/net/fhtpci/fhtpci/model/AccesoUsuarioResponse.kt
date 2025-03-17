@@ -1,5 +1,7 @@
 package net.fhtpci.fhtpci.model
 
+import com.google.gson.annotations.SerializedName
+
 /*
  * API PARA FARENHEIT SYSTEM FHTPCI Fhtpci
  * NOMBRE: mod_api_revisa_acceso_usuario.php
@@ -14,6 +16,6 @@ package net.fhtpci.fhtpci.model
  */
 
 data class AccesoUsuarioResponse(
-    val IdUsuario: Int,
-    val Mensaje: String
+    @SerializedName("IdUsuario") val userId: String,
+    @SerializedName("Mensaje") val message: String
 )
