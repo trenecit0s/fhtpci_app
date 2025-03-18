@@ -28,6 +28,7 @@ interface ApiService {
     ): Response<AccesoUsuarioResponse>
 }
 
+//https://fhtpci.net/api/mod_api_revisa_acceso_usuario.php?kcve_usuario=TEC00&kpwd_usuario=12345678
 /*
 //https://fhtpci.net/api/mod_api_regresa_version_app.php?datoaenviar
 
