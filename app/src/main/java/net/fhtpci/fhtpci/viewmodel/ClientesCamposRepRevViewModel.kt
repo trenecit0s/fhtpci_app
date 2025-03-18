@@ -13,7 +13,7 @@ import net.fhtpci.fhtpci.repository.ClientesCamposRepRevRepository
  * NOMBRE: mod_api_ext_rep_revision_mensual_campos.php
  * DESCRIPCION: REGRESA LA LISTA DE CAMPOS QUE EL CLIENTE OBLIGATORIAMENTE REQUIERE POR PARTE DE FHTPCI EN CADA REVISION
  * PARAMETROS:
-  cual_tecnico: Int
+  cual_cliente: Int
  *
  * CAMPOS QUE REGRESA:
   "idCliente" => (INT) ID CLIENTE,

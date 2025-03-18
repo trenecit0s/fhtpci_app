@@ -2,19 +2,78 @@ package net.fhtpci.fhtpci
 
 import retrofit2.http.GET
 
-/*
- * API PARA FARENHEIT SYSTEM FHTPCI Fhtpci
- * NOMBRE: mod_api_regresa_version_app.php
- * DESCRIPCION: REGRESA LA VERSION DE LA APP
- * PARAMETROS: NINGUNO
- * CAMPOS QUE REGRESA:
-  "ClaveVersion" => STR(30) CLAVE O VERSION DE LA APP,
-  "FechaVersion" => (DATE) FECHA DE LA VERSION,
-  "HoraVersion" => (TIME) HORA DE LA VERSION,
-  "TamanioVersion" => (FLOAT) TAMANIO DE LA VERSION
- */
-
 interface FhtpciService {
+
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getAccesoUsuario()
+
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getClientesActivos()
+
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getClientesActivosTecnico()
+
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getClientesCamposRepRev()
+
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getClientesExtintores()
+
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getClientesReporteRevisionMensual()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getDispositivo()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtAltura()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtBase()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtCapacidad()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtDifusor()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtEstado()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtManguera()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtManometro()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtPintura()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtPresion()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtSeguro()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtSenial()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtTipoCapacidad()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getExtTipo()
+
     @GET(Constants.PATH_FHTPCI)
     suspend fun getAPPVersion()
+
+    @GET(Constants.PATH_FHTPCI)
+    suspend fun getZonasClientesActivos()
+
 }
