@@ -32,7 +32,7 @@ interface ApiService {
     suspend fun getAccesoUsuario(
         @Query("kcve_usuario") userKey: String,
         @Query("kpwd_usuario") userPassword: String
-    ): Response<AccesoUsuarioResponse>
+    ): Response<List<AccesoUsuarioResponse>>
 
     @GET("mod_api_cata_clientes_activos.php")
     suspend fun getClientesActivos(): Response<List<ClientesActivosResponse>>

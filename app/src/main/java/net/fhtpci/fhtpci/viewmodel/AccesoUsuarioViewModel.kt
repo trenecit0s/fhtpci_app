@@ -28,9 +28,9 @@ class AccesoUsuarioViewModel : ViewModel()  {
     private val _accesousuarioList = MutableLiveData<List<AccesoUsuarioResponse>?>()
     val accesousuarioList: LiveData<List<AccesoUsuarioResponse>?> get() = _accesousuarioList
 
-    fun fetchAccesoUsuario() {
+    fun fetchAccesoUsuario(userName: String, password: String) {
         viewModelScope.launch {
-            val accesousuario = repository.fetchAccesoUsuario()
+            val accesousuario = repository.fetchAccesoUsuario(userName, password)
             _accesousuarioList.postValue(accesousuario)
         }
     }

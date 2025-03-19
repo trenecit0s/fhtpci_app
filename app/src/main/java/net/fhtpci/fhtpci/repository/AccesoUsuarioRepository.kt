@@ -19,10 +19,10 @@ import net.fhtpci.fhtpci.model.AccesoUsuarioResponse
  */
 
 class AccesoUsuarioRepository {
-    suspend fun fetchAccesoUsuario(): List<AccesoUsuarioResponse>? {
+    suspend fun fetchAccesoUsuario(username: String, password: String): List<AccesoUsuarioResponse>? {
         return withContext(Dispatchers.IO) {
             try {
-                val response = ApiClient.instance.getAccesoUsuario()
+                val response = ApiClient.instance.getAccesoUsuario(username, password)
                 if (response.isSuccessful) {
                     response.body()
                 } else {
