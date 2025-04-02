@@ -67,85 +67,80 @@
                 android:textStyle="bold|italic" />
 
             <View
-                android:id="@+id/divider"
+                android:id="@+id/divider01"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="10dp"
                 android:background="?android:attr/listDivider" />
 
-
-            <TextView
-                android:id="@+id/txtViewCualCliente"
+            <Spinner
+                android:id="@+id/spinnerClienteTecnico"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"
-                android:text="@string/txt_view_cual_seleccionar_cliente" />
-
-            <TextView
-                android:id="@+id/txtViewCualDispositivo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"
-                android:text="@string/txt_view_cual_seleccionar_tipo_dispositivos" />
-
-            <TextView
-                android:id="@+id/txtViewAnio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"
-                android:text="@string/txt_view_cual_seleccionar_anio" />
-
-            <TextView
-                android:id="@+id/txtViewSeleccionarMes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@android:color/black"
-                android:text="@string/txt_view_cual_seleccionar_mes" />
+                android:layout_height="50dp"
+                android:background="@color/fhtpciLlama1"
+                android:dropDownSelector="@color/black"
+                android:popupBackground="@color/fhtpciLlama1"
+                android:text="@string/spinner_text_seleccionar_cliente_tecnico"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black" />
 
             <View
-                android:id="@+id/divider2"
+                android:id="@+id/divider0101"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="10dp"
                 android:background="?android:attr/listDivider" />
 
-            <Button
-                android:id="@+id/btnSeleccionaCliente"
+            <Spinner
+                android:id="@+id/spinnerTipoDispositivo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/fhtpciLlama1"
+                android:layout_height="50dp"
+                android:background="@color/fhtpciLlama1"
+                android:dropDownSelector="@color/black"
+                android:popupBackground="@color/fhtpciLlama1"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:text="@string/btn_text_seleccionar_cliente" />
+                android:textAlignment="textStart"
+                android:text="@string/spinner_text_seleccionar_tipo_dispositivo"
+                />
 
-            <Button
-                android:id="@+id/btnSeleccionaDispositivo"
+            <View
+                android:id="@+id/divider0102"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/fhtpciLlama1"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:text="@string/btn_text_seleccionar_tipo_dispositivo" />
+                android:layout_height="10dp"
+                android:background="?android:attr/listDivider" />
 
-            <Button
-                android:id="@+id/btnSeleccionarAnio"
+            <Spinner
+                android:id="@+id/spinnerSeleccionaAnio"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/fhtpciLlama1"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:text="@string/btn_text_seleccionar_anio" />
+                android:layout_height="50dp"
+                android:background="@color/fhtpciLlama1"
+                android:dropDownSelector="@color/black"
+                android:popupBackground="@color/fhtpciLlama1"
+                android:text="@string/spinner_text_seleccionar_anio"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
 
-            <Button
-                android:id="@+id/btnSeleccionarMes"
+            <View
+                android:id="@+id/divider0103"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/fhtpciLlama1"
+                android:layout_height="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <Spinner
+                android:id="@+id/spinnerSeleccionaMes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/fhtpciLlama1"
+                android:dropDownSelector="@color/black"
+                android:popupBackground="@color/fhtpciLlama1"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:text="@string/btn_text_seleccionar_mes" />
+                android:textAlignment="center"
+                android:text="@string/spinner_text_seleccionar_mes"
+                />
+
+            <View
+                android:id="@+id/divider02"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="?android:attr/listDivider" />
 
             <Button
                 android:id="@+id/btnReporteRevision"
@@ -155,6 +150,12 @@
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:text="@string/btn_text_ver_editar_reporte" />
+
+            <View
+                android:id="@+id/divider03"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="?android:attr/listDivider" />
 
             <Button
                 android:id="@+id/btnCerrarSesion"
@@ -166,10 +167,11 @@
                 android:text="@string/btn_text_cerrar_sesion" />
 
             <View
-                android:id="@+id/divider3"
+                android:id="@+id/divider04"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:background="?android:attr/listDivider" />
+
         </LinearLayout>
 
         <LinearLayout

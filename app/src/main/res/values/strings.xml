@@ -17,10 +17,10 @@
     <string name="txt_view_cual_seleccionar_tipo_dispositivos">Tipo Dispositivos:</string>
     <string name="txt_view_cual_seleccionar_anio">Año:</string>
     <string name="txt_view_cual_seleccionar_mes">Mes:</string>
-    <string name="btn_text_seleccionar_cliente">Seleccionar Cliente</string>
-    <string name="btn_text_seleccionar_tipo_dispositivo">Seleccionar Tipo Dispositivo</string>
-    <string name="btn_text_seleccionar_anio">Seleccionar Año</string>
-    <string name="btn_text_seleccionar_mes">Seleccionar Mes</string>
+    <string name="spinner_text_seleccionar_cliente_tecnico">Seleccionar Cliente Tecnico</string>
+    <string name="spinner_text_seleccionar_tipo_dispositivo">Seleccionar Tipo Dispositivo</string>
+    <string name="spinner_text_seleccionar_anio">Seleccionar Año</string>
+    <string name="spinner_text_seleccionar_mes">Seleccionar Mes</string>
     <string name="btn_text_ver_editar_reporte">Ver/Editar Reporte de Revisión</string>
     <string name="btn_text_inicio_sesion">Iniciar Sesión</string>
     <string name="btn_text_cerrar_sesion">Cerrar Sesión</string>

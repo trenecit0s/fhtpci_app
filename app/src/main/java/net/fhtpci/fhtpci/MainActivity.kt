@@ -49,6 +49,21 @@ class MainActivity : AppCompatActivity() {
             val password = findViewById<EditText>(R.id.txtPwdUsuario).text
 
             accesoUsuarioViewModel.fetchAccesoUsuario(userName.toString(), password.toString()) //"TEC00", "12345678"
+
+            /*
+             * API PARA FARENHEIT SYSTEM FHTPCI Fhtpci
+             * NOMBRE: mod_api_guarda_acceso_usuario.php
+             * DESCRIPCION: GUARDA ACCESO DEL USUARIO
+             * PARAMETROS:
+              cual_usuario => INT CLAVE DEL USUARIO
+             *
+             * METODO: POST
+             *
+             * CAMPOS QUE REGRESA:
+              NINGUNO
+             */
+
+
         }
 
 
